@@ -1,12 +1,9 @@
-"""Example DAG demonstrating the usage of the BashOperator."""
-
 from datetime import timedelta
+from typing import List
 
 from airflow import DAG
 from airflow.utils.dates import days_ago
 from airflow.operators.python import PythonOperator
-
-from typing import List
 
 from pyspark.sql import SparkSession
 from pyspark.ml.feature import OneHotEncoder
